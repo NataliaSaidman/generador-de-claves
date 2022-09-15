@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../imagenes/otoño.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+form {
+    margin-top: 50px;
+}
+
+.contraseña {
+    width: 450px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 20px;
+  
+
+}
+
+
+
+button {
+    font-size: 25px;
+    background-color: white;
+    border: white;
+    margin-right: 5px;
+    
+}
+
+.generar-contraseña{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 50px;
+}
+
+#btn-generar{
+    color: white;
+    border-radius: 5px;
+    background-color: #711F43;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.fa-copy,
+.fa-arrows-rotate {
+    color:#711F43;
+}
+
+#contraseña {
+    height: 30px;
+    width: 200px;
+    border: white;
+}
+
+
+
+.persoanlizar-contraseña {
+    border-radius: 10px;
+    height: 250px;
+    width: 500px;
+    background-color: white;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #711F43;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #711F43;
+}
+
+.caracteristicas-contraseña{
+    display: flex;
+    height: 120px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.longitud {
+    margin-left: 5px;
+}
+
+.reglas {
+    margin-left: 40px;
+}
+
+.eleccion-caracteres {
+    margin-left: 30px;
+}
+
+input[type=radio],
+[type=checkbox] {
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px){
+
+    .contraseña{
+        height: 60px;
+
+    }
+   
+    .generar-contraseña{
+      margin-top: 10px;
+      height: 50px;
+    }
+
+    .persoanlizar-contraseña{
+        margin-top: -40px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 750px){
+   
+    .contraseña{
+        height: 60px;
+    }
+    .generar-contraseña{
+      height: 50px;
+    }
+
+    .persoanlizar-contraseña{
+        height: 220px;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+
+
+    .contraseña {
+        height: 80px;
+        width: 300px;
+    }
+
+    .persoanlizar-contraseña {
+        width: 300px;
+        height: 500px;
+        margin-left: 20px;
+    }
+
+    h2 {
+        width: 280px;
+    }
+
+    .caracteristicas-contraseña {
+        flex-direction: column;
+    }
+
+    .reglas,
+    .eleccion-caracteres {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    body{
+        height: 120vh;
+    }
+   
+    .contraseña {
+        width: 270px;
+        margin-left: 10px;
+        margin-top: 70px;
+    }
+
+    .generar-contraseña{
+        margin-top: 20px;
+    }
+
+    .persoanlizar-contraseña {
+        width: 270px;
+        margin-left: 10px;
+    }
+}

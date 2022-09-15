@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="imagenes/autum-ovate-leafs-silhouette-style-icon-free-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Generador de claves</title>
 </head>
+
 <body>
+    <main>
+        <section>
+            <div class="contraseña">
+                <p></p>
+                <div>
+                    <button id="btn-copiado"><i class="fa-solid fa-copy"></i></button>
+                    <button id="btn-actualizar"><i class="fa-solid fa-arrows-rotate"></i></button>
+                </div>
+            </div>
+            <div class ="generar-contraseña">
+                <button id="btn-generar">Generar clave</button>
+            </div>
+        </section>
+        <section>
+            <form action="GET">
+                <div class="persoanlizar-contraseña">
+                    <h2>Personalice su contraseña</h2>
+                    <div class="caracteristicas-contraseña">
+                        <div class="longitud">
+                            <span>Longitud</span>
+                            <br>
+                            <input type="radio" name="longitud" class="longitudRadio" id="longitudDoce"  value="12"><label for="longitudDoce">12 caracteres</label>
+                            <br>
+                            <input type="radio" name="longitud" class="longitudRadio" id="longitudNueve" value="9"><label for="longitudNueve">9 caracteres</label>
+                            <br>
+                            <input type="radio" name="longitud" class="longitudRadio" id="longitudSeis" checked value="6"><label for="longitudSeis">6 caracteres</label>
+                        </div>
+                        <div class="reglas">
+                            <span>Reglas</span>
+                            <br>
+                            <input type="radio" name="reglas" class="reglasRadio" id="reglasLetras" checked value="1"><label for="reglasLetras">Solo letras</label>
+                            <br>
+                            <input type="radio" name="reglas" class="reglasRadio" id="reglasNumeros" value="2"><label for="reglasNumeros">Solo Números</label>
+                            <br>
+                            <input type="radio" name="reglas" class="reglasRadio" id="reglasTodo" value="3"><label for="reglasTodo">Todos los caracteres</label>
+                        </div>
+                        <div class="eleccion-caracteres">
+                            <span>Caracteres</span>
+                            <br>
+                            <input type="checkbox" name="mayusculas" class="caracteres" id="mayusculas" checked value="1"><label for="mayusculas">Mayúsculas</label>
+                            <br>
+                            <input type="checkbox" name="minusculas" class="caracteres" id="minusculas" value="2"><label for="minusculas">Minúsculas</label>
+                            <br>
+                            <input type="checkbox" name="numeros" class="caracteres" id="numeros" disabled value="3"><label for="numeros">Números</label>
+                            <br>
+                            <input type="checkbox" name="simbolos" class="caracteres" id="simbolos" disabled value="4"><label for="simbolos">Símbolos</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>
