@@ -146,19 +146,19 @@ input[type=radio],
 
     .generated-password {
         height: 80px;
-        width: 300px;
+        width: 330px;
+        margin-left: 10px;
     }
 
     #password {
         width: 200px;
-        margin-left: 20px;
     }
 
 
     .customize-password {
-        width: 300px;
+        width: 330px;
         height: 500px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
 
@@ -178,7 +178,7 @@ input[type=radio],
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 300px) {
 
     body {
         height: 120vh;
