@@ -8,26 +8,25 @@ body {
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 form {
     margin-top: 50px;
 }
 
-.contraseña {
+.generated-password {
     width: 450px;
     height: 70px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
     margin-left: 20px;
-  
 
 }
-
 
 
 button {
@@ -38,35 +37,21 @@ button {
     
 }
 
-.generar-contraseña{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    height: 50px;
-}
-
-#btn-generar{
-    color: white;
-    border-radius: 5px;
-    background-color: #711F43;
-    cursor: pointer;
-    font-size: 22px;
-}
-
 .fa-copy,
 .fa-arrows-rotate {
     color:#711F43;
 }
 
-#contraseña {
+#password {
     height: 30px;
-    width: 200px;
+    width: 300px;
     border: white;
+    margin-bottom: 50px;
+    text-align: center;
+    
 }
 
-
-
-.persoanlizar-contraseña {
+.customize-password {
     border-radius: 10px;
     height: 250px;
     width: 500px;
@@ -83,25 +68,26 @@ h2 {
     padding-left: 10px;
     padding-top: 10px;
     color: #711F43;
+    margin-top: 0;
 }
 
-.caracteristicas-contraseña{
+.password-features{
     display: flex;
     height: 120px;
     padding-top: 10px;
     padding-left: 10px;
 }
 
-.longitud {
+.password-length {
     margin-left: 5px;
 }
 
-.reglas {
+.password-rules {
     margin-left: 40px;
 }
 
-.eleccion-caracteres {
-    margin-left: 30px;
+.choice-characters{
+    margin-left: 20px;
 }
 
 input[type=radio],
@@ -111,17 +97,12 @@ input[type=radio],
 
 @media (max-width: 1000px){
 
-    .contraseña{
+    .generated-password {
         height: 60px;
 
     }
-   
-    .generar-contraseña{
-      margin-top: 10px;
-      height: 50px;
-    }
 
-    .persoanlizar-contraseña{
+    .customize-password{
         margin-top: -40px;
         height: 225px;
     }
@@ -129,14 +110,11 @@ input[type=radio],
 
 @media (max-width: 750px){
    
-    .contraseña{
+    .generated-password {
         height: 60px;
     }
-    .generar-contraseña{
-      height: 50px;
-    }
 
-    .persoanlizar-contraseña{
+    .customize-password{
         height: 220px;
     }
 }
@@ -146,27 +124,33 @@ input[type=radio],
 @media (max-width: 450px) {
 
 
-    .contraseña {
+    .generated-password {
         height: 80px;
         width: 300px;
     }
 
-    .persoanlizar-contraseña {
+    #password{
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .customize-password {
         width: 300px;
         height: 500px;
         margin-left: 20px;
     }
 
+  
     h2 {
         width: 280px;
     }
 
-    .caracteristicas-contraseña {
+    .password-features {
         flex-direction: column;
     }
 
-    .reglas,
-    .eleccion-caracteres {
+    .password-rules,
+    .choice-characters {
         margin-left: 5px;
         margin-top: 10px;
     }
@@ -179,18 +163,22 @@ input[type=radio],
         height: 120vh;
     }
    
-    .contraseña {
+    .generated-password  {
         width: 270px;
         margin-left: 10px;
         margin-top: 70px;
     }
 
-    .generar-contraseña{
-        margin-top: 20px;
+    #password{
+        width: 180px;
+        margin-left: 20px;
     }
 
-    .persoanlizar-contraseña {
+
+    .customize-password {
         width: 270px;
         margin-left: 10px;
     }
+
 }
+
