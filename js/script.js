@@ -92,36 +92,37 @@ const finalPassword = () => {
     return $password.value = finalPass.join("")
 }
 
-const checkboxFalse = () => {
-    $symbols.checked = false
-    $numbers.checked = false
-    $lowerCaseLetters.checked = false
-    $capitalLetters.checked = false
-}
+
 
 //Eventos
 
-$lettersRules.addEventListener("change", () => {
+
+
+$lettersRules.addEventListener("click", () => {
     if (saveInfo($radiusRules) === 1) {
         $capitalLetters.disabled = false
         $lowerCaseLetters.disabled = false
         $numbers.disabled = true
         $symbols.disabled = true
-        checkboxFalse()
-        $password.value = ""
-
+        $capitalLetters.checked = true
+        $lowerCaseLetters.checked = true
+        $numbers.checked = false
+        $symbols.checked = false
+        finalPassword()
     }
 })
 
-$numbersRules.addEventListener("change", () => {
+$numbersRules.addEventListener("click", () => {
     if (saveInfo($radiusRules) === 2) {
         $numbers.disabled = false
         $symbols.disabled = true
         $capitalLetters.disabled = true
         $lowerCaseLetters.disabled = true
-        checkboxFalse()
-        $password.value = ""
-
+        $capitalLetters.checked = false
+        $lowerCaseLetters.checked = false
+        $numbers.checked = true
+        $symbols.checked = false
+        finalPassword()
     }
 })
 
@@ -131,8 +132,12 @@ $allRules.addEventListener("change", () => {
         $lowerCaseLetters.disabled = false
         $numbers.disabled = false
         $symbols.disabled = false
-        checkboxFalse()
-        $password.value = ""
+        $capitalLetters.checked = true
+        $lowerCaseLetters.checked = true
+        $numbers.checked = true
+        $symbols.checked = true
+        finalPassword()
+
 
     }
 })
@@ -144,7 +149,7 @@ for (const character of $characters) {
     })
 }
 
-for (const radiusLength of $radiusLength){
+for (const radiusLength of $radiusLength) {
     radiusLength.addEventListener("click", () => {
         finalPassword()
     })

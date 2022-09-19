@@ -50,12 +50,10 @@ button {
 .fa-copy,
 .fa-arrows-rotate {
     color: #711F43;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
-.fa-copy{
-    
-}
+
 
 #password {
     height: 30px;
