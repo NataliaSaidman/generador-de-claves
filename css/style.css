@@ -44,13 +44,16 @@ button {
     background-color: white;
     border: white;
     margin-right: 5px;
-    padding: 0 10px;
 
 }
 
 .fa-copy,
 .fa-arrows-rotate {
     color: #711F43;
+}
+
+.fa-copy{
+    padding-right: 10px;
 }
 
 #password {
@@ -150,6 +153,7 @@ input[type=radio],
         width: 200px;
         margin-left: 20px;
     }
+
 
     .customize-password {
         width: 300px;
