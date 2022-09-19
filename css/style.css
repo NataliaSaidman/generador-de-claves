@@ -1,3 +1,10 @@
+/*Estilado general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     margin: auto 0;
@@ -12,6 +19,8 @@ body {
     overflow-x: hidden;
 }
 
+/*Estilado de la primera sección*/
+
 form {
     margin-top: 50px;
 }
@@ -25,6 +34,7 @@ form {
     justify-content: space-around;
     background-color: white;
     margin-left: 20px;
+    border: #711F43 2px solid;
 
 }
 
@@ -34,12 +44,12 @@ button {
     background-color: white;
     border: white;
     margin-right: 5px;
-    
+
 }
 
 .fa-copy,
 .fa-arrows-rotate {
-    color:#711F43;
+    color: #711F43;
 }
 
 #password {
@@ -48,14 +58,17 @@ button {
     border: white;
     margin-bottom: 50px;
     text-align: center;
-    
+    font-size: 16px;
+
 }
 
+/*Estilado de la segunda sección*/
 .customize-password {
     border-radius: 10px;
     height: 250px;
     width: 500px;
     background-color: white;
+    border: #711F43 2px solid;
 }
 
 span {
@@ -71,11 +84,12 @@ h2 {
     margin-top: 0;
 }
 
-.password-features{
+.password-features {
     display: flex;
     height: 120px;
     padding-top: 10px;
     padding-left: 10px;
+    margin-top: 20px;
 }
 
 .password-length {
@@ -86,7 +100,7 @@ h2 {
     margin-left: 40px;
 }
 
-.choice-characters{
+.choice-characters {
     margin-left: 20px;
 }
 
@@ -95,26 +109,28 @@ input[type=radio],
     margin-top: 10px;
 }
 
-@media (max-width: 1000px){
+/* Media Queries. Incluye cuatro breakpoints*/
+
+@media (max-width: 1000px) {
 
     .generated-password {
         height: 60px;
 
     }
 
-    .customize-password{
+    .customize-password {
         margin-top: -40px;
         height: 225px;
     }
 }
 
-@media (max-width: 750px){
-   
+@media (max-width: 750px) {
+
     .generated-password {
         height: 60px;
     }
 
-    .customize-password{
+    .customize-password {
         height: 220px;
     }
 }
@@ -129,7 +145,7 @@ input[type=radio],
         width: 300px;
     }
 
-    #password{
+    #password {
         width: 200px;
         margin-left: 20px;
     }
@@ -140,7 +156,7 @@ input[type=radio],
         margin-left: 20px;
     }
 
-  
+
     h2 {
         width: 280px;
     }
@@ -159,17 +175,18 @@ input[type=radio],
 
 @media (max-width: 380px) {
 
-    body{
+    body {
         height: 120vh;
     }
-   
-    .generated-password  {
+
+    .generated-password {
         width: 270px;
-        margin-left: 10px;
+        margin-left: 5px;
         margin-top: 70px;
+        border: none;
     }
 
-    #password{
+    #password {
         width: 180px;
         margin-left: 20px;
     }
@@ -177,8 +194,8 @@ input[type=radio],
 
     .customize-password {
         width: 270px;
-        margin-left: 10px;
+        margin-left: 5px;
+        border: none;
     }
 
 }
-

@@ -16,7 +16,8 @@
 
 <body>
     <main>
-        <div class="generated-password">
+        <!--Sección en la cual se genera la clave-->
+        <section class="generated-password">
             <form action="GET">
                 <input type="text" id="password">
             </form>
@@ -24,7 +25,8 @@
                 <button id="btn-copy"><i class="fa-solid fa-copy"></i></button>
                 <button id="btn-refresh"><i class="fa-solid fa-arrows-rotate"></i></button>
             </div>
-        </div>
+        </section>
+        <!--Sección donde el usuario elige las opciones para generar la clave-->
         <section>
             <form action="GET">
                 <div class="customize-password">
@@ -33,26 +35,26 @@
                         <div class="password-length">
                             <span>Longitud</span>
                             <br>
-                            <input type="radio" name="length" class="radius-length" id="twelveCharacters" checked
+                            <input type="radio" name="length" class="radiusLength" id="twelveCharacters" checked
                                 value="12">
                             <label for="twelveCharacters">12 caracteres</label>
                             <br>
-                            <input type="radio" name="length" class="radius-length" id="nineCharacters" value="9">
+                            <input type="radio" name="length" class="radiusLength" id="nineCharacters" value="9">
                             <label for="nineCharacters">9 caracteres</label>
                             <br>
-                            <input type="radio" name="length" class="radius-length" id="sixCharacters" value="6">
+                            <input type="radio" name="length" class="radiusLength" id="sixCharacters" value="6">
                             <label for="sixCharacters">6 caracteres</label>
                         </div>
                         <div class="password-rules">
                             <span>Reglas</span>
                             <br>
-                            <input type="radio" name="rules" class="radius-rules" id="lettersRules" checked value="1">
+                            <input type="radio" name="rules" class="radiusRules" id="lettersRules" checked value="1">
                             <label for="lettersRules">Solo letras</label>
                             <br>
-                            <input type="radio" name="rules" class="radius-rules" id="numbersRules" value="2">
+                            <input type="radio" name="rules" class="radiusRules" id="numbersRules" value="2">
                             <label for="numbersRules">Solo Números</label>
                             <br>
-                            <input type="radio" name="rules" class="radius-rules" id="allRules" value="3">
+                            <input type="radio" name="rules" class="radiusRules" id="allRules" value="3">
                             <label for="allRules">Todos los caracteres</label>
                         </div>
                         <div class="choice-characters">
