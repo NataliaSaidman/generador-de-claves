@@ -92,7 +92,7 @@ const finalPassword = () => {
     return $password.value = finalPass.join("")
 }
 
-
+finalPassword()
 
 //Eventos
 
