@@ -53,7 +53,13 @@ button {
     padding-right: 10px;
 }
 
+.fa-copy:active{
+    color: #d13b7c;
+}
 
+.fa-arrows-rotate:active{
+    color: #d13b7c;
+}
 
 #password {
     height: 30px;
@@ -64,6 +70,8 @@ button {
     font-size: 18px;
 
 }
+
+
 
 /*Estilado de la segunda sección*/
 .customize-password {

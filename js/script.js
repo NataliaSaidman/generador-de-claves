@@ -88,7 +88,7 @@ const randomPassword = (array) => {
 }
 
 const finalPassword = () => {
-    let finalPass = randomPassword(cutPassword())
+    let finalPass = randomPassword(cutPassword()) 
     return $password.value = finalPass.join("")
 }
 
@@ -109,6 +109,7 @@ $lettersRules.addEventListener("click", () => {
         $numbers.checked = false
         $symbols.checked = false
         finalPassword()
+        $password.style.color = "#d13b7c"
     }
 })
 
@@ -137,7 +138,6 @@ $allRules.addEventListener("change", () => {
         $numbers.checked = true
         $symbols.checked = true
         finalPassword()
-
 
     }
 })
