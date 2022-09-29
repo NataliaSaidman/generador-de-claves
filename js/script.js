@@ -39,13 +39,15 @@ const saveInfo = (array) => {
     }
 }
 
+const randomArray = (max) => Math.floor(Math.random()* max)
+
 const generateLongPassword = () => {
     const array = []
     for (let i = 0; i < 20; i++) {
-        const lettersCapital = Math.floor(Math.random() * arrayCapitalLetters.length)
-        const lettersLower = Math.floor(Math.random() * arrayLowerLetters.length)
-        const numbers = Math.floor(Math.random() * arrayNumbers.length)
-        const symbols = Math.floor(Math.random() * arraySymbol.length)
+        const lettersCapital = randomArray(arrayCapitalLetters.length)
+        const lettersLower = randomArray(arrayLowerLetters.length)
+        const numbers = randomArray(arrayNumbers.length)
+        const symbols = randomArray(arraySymbol.length)
         array.push(arrayCapitalLetters[lettersCapital]) + array.push(arrayLowerLetters[lettersLower]) + array.push(arrayNumbers[numbers]) + array.push(arraySymbol[symbols])
     } return array;
 }
@@ -87,6 +89,12 @@ const randomPassword = (array) => {
     return array
 }
 
+const noChecked = () =>{
+        if(!$capitalLetters.checked && !$lowerCaseLetters.checked && !$lowerCaseLetters.checked && !$symbols.checked){
+            return alert(`Hace click en al menos una de las opciones de "Caracteres" para que se genere una clave`)
+        }
+}
+
 const finalPassword = () => {
     let finalPass = randomPassword(cutPassword()) 
     return $password.value = finalPass.join("")
@@ -109,7 +117,6 @@ $lettersRules.addEventListener("click", () => {
         $numbers.checked = false
         $symbols.checked = false
         finalPassword()
-        $password.style.color = "#d13b7c"
     }
 })
 
@@ -144,8 +151,10 @@ $allRules.addEventListener("change", () => {
 
 
 for (const character of $characters) {
-    character.addEventListener("click", () => {
+    character.addEventListener("click", (e) => {
+        noChecked()
         finalPassword()
+        
     })
 }
 
