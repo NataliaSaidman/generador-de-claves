@@ -91,7 +91,7 @@ const randomPassword = (array) => {
 
 const noChecked = () =>{
         if(!$capitalLetters.checked && !$lowerCaseLetters.checked && !$lowerCaseLetters.checked && !$symbols.checked){
-            return alert(`Hace click en al menos una de las opciones de "Caracteres" para que se genere una clave`)
+            return alert(`Hace click en, al menos, una de las opciones de "Caracteres" para que se genere una clave`)
         }
 }
 
