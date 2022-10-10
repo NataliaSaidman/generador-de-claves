@@ -7,10 +7,9 @@ Cada persona puede personalizar su clave eligiendo la longitud y caracteres que 
 
 ## Funcionalidad del proyecto ⚙️
 Para generar la clave, el/la usuario/a, debe elegir tres opciones:
-- La longitud que desea que tenga su clave: 12, 9 o 6 caracteres
-- Elegir una de las tres reglas que se ofrecen: letras, números o todos los caracteres. Está última opción incluye la posibilidad de incorporar símbolos.
-- Una o más opciones de la lista de caracteres. 
-La clave se genera automáticamente al clickear en alguna de las opciones antes mencionada. 
+- La longitud que desea que tenga su clave: 12, 9 o 6 caracteres.
+- Elegir una de las tres reglas que se ofrecen: letras, números o todos los caracteres. Esta última opción incluye la posibilidad de incorporar símbolos.
+- Una o más opciones de la lista de caracteres. La clave se genera automáticamente al clickear en alguna de estas opciones.         
 A su vez, la aplicación cuenta con dos botones:
 - Botón de copiado: para copiar la contraseña y usarla donde desee.
 - Botón actualizar: para generar una nueva contraseña de forma aleatoria. 
