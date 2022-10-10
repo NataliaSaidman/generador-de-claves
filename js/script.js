@@ -172,4 +172,5 @@ $btnRefresh.addEventListener("click", (e) => {
 $btnCopy.addEventListener("click", (e) => {
     e.preventDefault()
     navigator.clipboard.writeText($password.value)
+    alert(`Contraseña copiada en el portapapeles.`)
 })
