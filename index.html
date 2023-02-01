@@ -1,83 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imagenes/autum-ovate-leafs-silhouette-style-icon-free-vector.jpg"
-        type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="imagenes/autum-ovate-leafs-silhouette-style-icon-free-vector.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Generador de claves</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Generador de contraseñas</h1>
+    </header>
     <main>
-        <!--Sección en la cual se genera la clave-->
-        <section class="generated-password">
-            <form action="GET">
-                <input type="text" id="password">
-            </form>
-            <div>
-                <button id="btn-copy"><i class="fa-solid fa-copy"></i></button>
-                <button id="btn-refresh"><i class="fa-solid fa-arrows-rotate"></i></button>
-            </div>
-        </section>
-        <!--Sección donde el usuario elige las opciones para generar la clave-->
-        <section>
-            <form action="GET">
-                <div class="customize-password">
-                    <h2>Personalice su contraseña</h2>
-                    <div class="password-features">
-                        <div class="password-length">
-                            <span>Longitud</span>
-                            <br>
-                            <input type="radio" name="length" class="radiusLength" id="twelveCharacters" checked
-                                value="12">
-                            <label for="twelveCharacters">12 caracteres</label>
-                            <br>
-                            <input type="radio" name="length" class="radiusLength" id="nineCharacters" value="9">
-                            <label for="nineCharacters">9 caracteres</label>
-                            <br>
-                            <input type="radio" name="length" class="radiusLength" id="sixCharacters" value="6">
-                            <label for="sixCharacters">6 caracteres</label>
-                        </div>
-                        <div class="password-rules">
-                            <span>Reglas</span>
-                            <br>
-                            <input type="radio" name="rules" class="radiusRules" id="lettersRules" checked value="1">
-                            <label for="lettersRules">Solo letras</label>
-                            <br>
-                            <input type="radio" name="rules" class="radiusRules" id="numbersRules" value="2">
-                            <label for="numbersRules">Solo Números</label>
-                            <br>
-                            <input type="radio" name="rules" class="radiusRules" id="allRules" value="3">
-                            <label for="allRules">Todos los caracteres</label>
-                        </div>
-                        <div class="choice-characters">
-                            <span>Caracteres</span>
-                            <br>
-                            <input type="checkbox" name="capital" class="characters" id="capitalLetters" checked>
-                            <label for="capitalLetters">Mayúsculas</label>
-                            <br>
-                            <input type="checkbox" name="lowercase" class="characters" id="lowerCaseLetters" checked>
-                            <label for="lowerCaseLetters">Minúsculas</label>
-                            <br>
-                            <input type="checkbox" name="numbers" class="characters" id="numbers"  disabled>
-                            <label for="numbers">Números</label>
-                            <br>
-                            <input type="checkbox" name="symbols" class="characters" id="symbols" disabled>
-                            <label for="symbols">Símbolos</label>
-                        </div>
-                    </div>
+      <!--Sección en la cual se genera la clave-->
+      <section class="generated-password">
+        <form action="GET">
+          <input type="text" id="password" />
+        </form>
+        <div>
+          <button id="btn-copy"><i class="fa-solid fa-copy"></i></button>
+          <button id="btn-refresh">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+      </section>
+      <!--Sección donde el usuario elige las opciones para generar la clave-->
+      <section>
+        <form action="GET">
+          <div class="customize-password">
+            <h2>Personalice su contraseña</h2>
+            <div class="password-features">
+              <div class="password-length">
+                <p>Longitud</p>
+                <div>
+                  <input
+                    type="radio"
+                    name="length"
+                    class="radiusLength"
+                    id="twelveCharacters"
+                    checked
+                    value="12"
+                  />
+                  <label for="twelveCharacters">12 caracteres</label>
                 </div>
-            </form>
-        </section>
+                <div>
+                  <input
+                    type="radio"
+                    name="length"
+                    class="radiusLength"
+                    id="nineCharacters"
+                    value="9"
+                  />
+                  <label for="nineCharacters">9 caracteres</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="length"
+                    class="radiusLength"
+                    id="sixCharacters"
+                    value="6"
+                  />
+                  <label for="sixCharacters">6 caracteres</label>
+                </div>
+              </div>
+              <div class="password-rules">
+                <p>Reglas</p>
+                <div>
+                  <input
+                    type="radio"
+                    name="rules"
+                    class="radiusRules"
+                    id="lettersRules"
+                    checked
+                    value="1"
+                  />
+                  <label for="lettersRules">Solo letras</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="rules"
+                    class="radiusRules"
+                    id="numbersRules"
+                    value="2"
+                  />
+                  <label for="numbersRules">Solo Números</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="rules"
+                    class="radiusRules"
+                    id="allRules"
+                    value="3"
+                  />
+                  <label for="allRules">Todos los caracteres</label>
+                </div>
+              </div>
+              <div class="choice-characters">
+                <p>Caracteres</p>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="capital"
+                    class="characters"
+                    id="capitalLetters"
+                    checked
+                  />
+                  <label for="capitalLetters">Mayúsculas</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="lowercase"
+                    class="characters"
+                    id="lowerCaseLetters"
+                    checked
+                  />
+                  <label for="lowerCaseLetters">Minúsculas</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="numbers"
+                    class="characters"
+                    id="numbers"
+                    disabled
+                  />
+                  <label for="numbers">Números</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="symbols"
+                    class="characters"
+                    id="symbols"
+                    disabled
+                  />
+                  <label for="symbols">Símbolos</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
