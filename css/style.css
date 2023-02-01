@@ -1,213 +1,227 @@
 /*Estilado general*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    margin: auto 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url("../imagenes/otoño.jpg");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../imagenes/otoño.jpg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
+  font-family: serif;
+  overflow-x: hidden;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 10%;
+  background-color: #711f43;
+  color: white;
+  position: fixed;
+  top: 0;
+}
 /*Estilado de la primera sección*/
 
 form {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .generated-password {
-    width: 450px;
-    height: 70px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    margin-left: 20px;
-    border: #711F43 2px solid;
-
+  width: 500px;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border: #711f43 2px solid;
 }
 
-
 button {
-    font-size: 25px;
-    background-color: white;
-    border: white;
-    margin-right: 5px;
-
+  font-size: 25px;
+  background-color: white;
+  border: white;
+  margin-right: 5px;
 }
 
 .fa-copy,
 .fa-arrows-rotate {
-    color: #711F43;
-    padding-right: 10px;
+  color: #711f43;
+  padding-right: 10px;
 }
 
-.fa-copy:active{
-    color: #ef88b5;
+.fa-copy:active {
+  color: #ef88b5;
 }
 
-.fa-arrows-rotate:active{
-    color: #ef88b5;
+.fa-arrows-rotate:active {
+  color: #ef88b5;
 }
 
 #password {
-    height: 30px;
-    width: 300px;
-    border: white;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 18px;
-
+  height: 30px;
+  width: 300px;
+  border: white;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 18px;
 }
-
-
 
 /*Estilado de la segunda sección*/
 .customize-password {
-    border-radius: 10px;
-    height: 250px;
-    width: 500px;
-    background-color: white;
-    border: #711F43 2px solid;
+  border-radius: 10px;
+  height: 250px;
+  width: 500px;
+  background-color: white;
+  border: #711f43 2px solid;
 }
 
-span {
-    font-size: 18px;
-    font-weight: 500;
-    color: #711F43;
+p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #711f43;
+  margin-bottom: 5px;
 }
 
 h2 {
-    padding-left: 10px;
-    padding-top: 10px;
-    color: #711F43;
-    margin-top: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #711f43;
+  margin-top: 0;
 }
 
 .password-features {
-    display: flex;
-    height: 120px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-top: 20px;
+  display: flex;
+  height: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
 }
 
 .password-length {
-    margin-left: 5px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .password-rules {
-    margin-left: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .choice-characters {
-    margin-left: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-input[type=radio],
-[type=checkbox] {
-    margin-top: 10px;
+input[type="radio"],
+[type="checkbox"] {
+  margin-top: 10px;
 }
 
 /* Media Queries. Incluye cuatro breakpoints*/
 
 @media (max-width: 1000px) {
+  .generated-password {
+    height: 60px;
+  }
 
-    .generated-password {
-        height: 60px;
-
-    }
-
-    .customize-password {
-        margin-top: -40px;
-        height: 225px;
-    }
+  .customize-password {
+    margin-top: -40px;
+    height: 225px;
+  }
 }
 
 @media (max-width: 750px) {
+  .generated-password {
+    height: 60px;
+  }
 
-    .generated-password {
-        height: 60px;
-    }
-
-    .customize-password {
-        height: 220px;
-    }
+  .customize-password {
+    height: 220px;
+  }
 }
-
-
 
 @media (max-width: 450px) {
+  .generated-password {
+    margin-top: 70px;
+    height: 80px;
+    width: 330px;
+    margin-left: 10px;
+  }
 
+  #password {
+    width: 200px;
+  }
 
-    .generated-password {
-        height: 80px;
-        width: 330px;
-        margin-left: 10px;
-    }
+  .customize-password {
+    width: 330px;
+    height: 500px;
+    margin-left: 10px;
+  }
 
-    #password {
-        width: 200px;
-    }
+  h1 {
+    font-size: 28px;
+  }
 
+  h2 {
+    width: 280px;
+  }
 
-    .customize-password {
-        width: 330px;
-        height: 500px;
-        margin-left: 10px;
-    }
+  .password-features {
+    flex-direction: column;
+  }
 
-
-    h2 {
-        width: 280px;
-    }
-
-    .password-features {
-        flex-direction: column;
-    }
-
-    .password-rules,
-    .choice-characters {
-        margin-left: 5px;
-        margin-top: 10px;
-    }
+  .password-rules,
+  .choice-characters {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
 }
 
-
 @media (max-width: 300px) {
+  body {
+    height: 120vh;
+  }
 
-    body {
-        height: 120vh;
-    }
+  .generated-password {
+    width: 270px;
+    margin-left: 5px;
+    margin-top: 70px;
+    border: none;
+  }
 
-    .generated-password {
-        width: 270px;
-        margin-left: 5px;
-        margin-top: 70px;
-        border: none;
-    }
+  h1 {
+    font-size: 22px;
+  }
 
-    #password {
-        width: 180px;
-        margin-left: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 
+  #password {
+    width: 180px;
+    margin-left: 20px;
+  }
 
-    .customize-password {
-        width: 270px;
-        margin-left: 5px;
-        border: none;
-    }
-
+  .customize-password {
+    width: 270px;
+    margin-left: 5px;
+    border: none;
+  }
 }
